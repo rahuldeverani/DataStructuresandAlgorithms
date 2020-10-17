@@ -10,6 +10,27 @@ class PriorityQueue {
 
 		data = new ArrayList<>();
 	}
+	
+	//make heap in O(n) time
+	public PriorityQueue(int arr[]) {
+		
+		data =new ArrayList<>();
+		for(int i=0;i<arr.length;i++) {
+			data.add(arr[i]);
+		}
+		for(int i=data.size()-1;i>=0;i--) {
+			downheapify(i);
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 
 	public int size() {
 		return data.size();
@@ -130,6 +151,15 @@ public class Heap_Implementation {
 		for(int i=0;i<arr3.length;i++) {
 			System.out.print(arr3[i]+" ");
 		}
+		
+		
+		//Making heap in n time 
+		PriorityQueue q= new PriorityQueue(arr2);
+		System.out.println();
+		q.printQueue();
+		
+		
+		
 		
 	}
 	
