@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Quickselect",
+            "request": "launch",
+            "mainClass": "Quickselect"
+        }
+    ]
+}
