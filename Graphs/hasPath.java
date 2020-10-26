@@ -24,6 +24,7 @@ public class Main {
        ArrayList<Edge> nbrs=graph[src];
        visited[src]=1;
        
+       // check if neighbor has path to dest , and also checking before making call if it is visited 
        for(int i=0;i<nbrs.size();i++){
            
            if(visited[nbrs.get(i).nbr]==0){
@@ -34,6 +35,8 @@ public class Main {
            
            
        }
+         // for current vtx, no path to dest using all neighbors
+
        return false;
        
        
