@@ -1,6 +1,12 @@
 import java.io.*;
 import java.util.*;
 
+
+/* can be used to check if graph is connected or not. How??
+ if a graph has more than one connected component, then it will not be a connected graph */ 
+
+
+
 public class Main {
    static class Edge {
       int src;
